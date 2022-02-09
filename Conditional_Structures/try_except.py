@@ -4,7 +4,9 @@
 
 # The try/except method works for 'dangerous' code. If the code in the try works - the except is skipped.
 # If the code fails the try - it jumps to the except section.
+# Sort of like an insurance policy.
 
+# Example 1
 astr = 'Hello Bob'
 try:
   istr = int(astr)
@@ -21,3 +23,15 @@ except:
 # When the second convention succeeds - it just skips the except: clause and the program continues.
 print('Second', rtsi)
 
+
+# Example 2
+rawstr = input('Enter a number:')
+try:
+  ival = int(rawstr)
+except:
+  ival = -1
+
+if ival > 0 :
+  print('Nice work')
+else:
+  print('Not a number')
