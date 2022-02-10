@@ -40,7 +40,7 @@ numflamda = int(flamda)
 # ex 2.3
 hours = input('Enter Hours: ')
 rate  = input('Enter Rate: ')
-pay = int(hours) * float(rate)
+pay = float(hours) * float(rate)
 roundPay = round(pay)
 print("Pay", pay)
 print("Pay", roundPay)
