@@ -22,8 +22,8 @@ def summing() :
 
 # Finding the average in a loop
 def average() :
-  count = float(0)
-  sum = float(0)
+  count = 0 #float(0) Automatically detects float variable in python3
+  sum = 0 #float(0)
   print('Before', count, sum)
   for value in numset :
     count = count + 1
@@ -38,5 +38,4 @@ def filter() :
     if value > 20 :
       print('Large number', value)
   print('After')
-
 
