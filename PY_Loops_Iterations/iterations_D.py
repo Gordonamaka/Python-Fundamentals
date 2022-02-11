@@ -39,3 +39,30 @@ def filter() :
       print('Large number', value)
   print('After')
 
+# Search Using a boolean Variable
+def search() :
+  found = False
+  print('Before', found)
+  for value in numset :
+    if value == 3 :
+      found = True
+    print(found, value)
+  print('After', found)
+
+# None type (how about that)
+# Finding the smallest value
+def findsmallest() :
+  smallest = None # None means emptiness, nothing.
+  print('Before')
+  for value in numset :
+    # line 67 for 'is' operator explanation
+    if smallest is None :
+      smallest = value
+    elif value < smallest :
+      smallest = value
+    print(smallest, value)
+  print('After', smallest)
+
+# == means are they equal in type and value
+# The "is" and "is not" Operations implies 'is (not) the same as' and is stronger than ==. 'is' seems to be strictly equal, whereas == is simply equal
+# Try not to use 'is' or 'is not' too sparringly, mostly use it for 'None' or booleans.
