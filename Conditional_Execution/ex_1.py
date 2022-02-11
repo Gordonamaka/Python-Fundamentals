@@ -1,35 +1,25 @@
-# Comparison operators
-# < Less than
-# <=  Less than or equal to
-# > Greater than
-# >= Greater than or equal to
-# > greater than
-# != not equal
+# Grade calculator
 
-# Indentation is very import in python
-
-# Three indentation rules of thumb: 
-# Increase indent, indent after an if statement or for statement (after :)
-# Maintain indent to indicate the scope of the block (white lines are affected by the if/for)
-# Reduce indent back to the level of the if statement or for statement to indicate the end of the block
-
-# You Deindent for if-else statements
-x  = 2
-if x > 2 :
-  print('Bigger')
-else :
-  print('Smaller')
+def grade():
+  score = input('Enter your score from 0.0 to 1.0:')
+  try:
+    range = float(score)
+  except:
+    print("Error, please enter number input.")
+    quit() # To not continue on (Sanity check)
   
-print('All Done')
+  # This only checks strict values, not ranged values.
+  if range == 0.5 :
+    print('You super failed!!')
+  elif range == 0.6 :
+    print('You got an F')
+  elif range == 0.7 :
+    print('You got a C')
+  elif range == 8 :
+    print('You got a B')
+  elif range == 9 :
+    print('You got an A')
+  else:
+    print('Error, Bad Score')
 
-# 'else if' is 'elif' in python
-# Interestingly enough, elif statements actually matter in python. If you were to make the elif an if statement, it would print all that apply. Else however is the catch all, without it, it could return nothing.
-l = 1
-if l < 2 :
-  print('Small')
-elif l < 10 :
-  print('Medium')
-else :
-  print('Large')
-print('All done')
-
+print(grade())
