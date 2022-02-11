@@ -8,7 +8,7 @@ def grade():
     print("Error, please enter number input.")
     quit() # To not continue on (Sanity check)
   
-  # This only checks strict values, not ranged values.
+  # This only checks strict values, not ranged values. Happy Path.
   if range == 0.5 :
     print('You super failed!!')
   elif range == 0.6 :
