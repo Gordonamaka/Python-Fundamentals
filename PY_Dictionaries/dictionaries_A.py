@@ -8,6 +8,10 @@
 
 # Build a Python-Django RestApi Boilerplate Repo : (MySQL / MongoDB - SQL would be faster to learn.) : https://www.educba.com/sql-server-vs-postgresql/
 
+# Research Data processing frameworks like Hadoop.
+
+# Find a quick and easy resource to learn Excel.
+
 # Build a Typescript React Boilerplate 
 # Python - build a Flask boilerplate if there's time
 
@@ -20,3 +24,5 @@
 # Try to upload more to Typescript repo this month, keep it fresh.
 
 # Visualize Data w/ Python & D3
+
+# LASTLY: Research Web3 Technologies: https://web3-technology-stack.readthedocs.io/en/latest/layer_3/apis/
