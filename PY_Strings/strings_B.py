@@ -46,3 +46,8 @@ print(cap) # Upper case
 # dir() is a powerful inbuilt function in Python3, which returns list of the attributes and methods of any object (say functions , modules, strings, lists, dictionaries etc.)
 dir(greet)
 
+# Searching a string - We can use the find() function to search for a substring within another string (The first occurrence, returns -1 if nothing is found.)
+pos = fruit.find('na')
+print(pos)
+aa = fruit.find('z')
+print(aa)
