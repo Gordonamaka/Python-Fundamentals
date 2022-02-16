@@ -1,4 +1,4 @@
-# Try Block Python
+# Try Block Python, akin to Javascript Try/Catch
 
 # For elif, if all statements are false, the block should have an else statement as a sort've catch all condition.
 
