@@ -12,7 +12,7 @@ type(lala)
 
 # You can create a floating point calculation with something like: 
 # print(float(99) + 100)
- 
+
 
 # You can convert strings into integers using the int() and float() methods... but, you will get an error if the string does not contain numeric characters.
 

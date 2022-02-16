@@ -51,3 +51,30 @@ pos = fruit.find('na')
 print(pos)
 aa = fruit.find('z')
 print(aa)
+
+# Search and Replace - replace() replaces all occurrences of the search string with the replacement string **REPLACE() IS CASE SENSITIVE**
+moveit = greet.replace('Bob', 'Jane')
+print(moveit)
+moveon = greet.replace('o', 'x')
+print(moveon)
+
+# Stripping Whitespace - lstrip() and rstrip() remove whitespace at the left or right
+# strip() removes both beginning and ending whitespace.
+
+# Prefixes
+line = 'Please have a nice day'
+line.startswith('Please') # True
+line.startswith('P') # False
+
+
+# Parsing and Extracting
+data = 'From alabama.countrymen.@uct.ac.za Sat Jan 5 09:14:16 2008'
+atpos = data.find('@')
+print(atpos)
+
+sppos = data.find(' ',atpos) # Space is the value point, indicating that it will find the first instance, FROM atpos, which is the start point. Default is zero.
+# A third argument is available (end) to indicate where to end the search. Default is the end of the string.
+print(sppos)
+
+host = data[atpos+1 : sppos] # Index position after 21 = atpos + 1
+print(host)
