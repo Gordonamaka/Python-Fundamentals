@@ -24,3 +24,12 @@ print(jjj.keys())
 print(jjj.values())
 # 4. items() - Which is a Tuple.
 print(jjj.items())
+
+# Two iteration variables !! We can loop through the key-value pairs in a dictionary using *two* iteration variables
+
+for aaa,bbb in jjj.items() :
+  print(aaa, bbb)
+
+# Each iteration, the first variable is the key and the second variable is the corresponding value for the key.
+
+# Python is the only language I know with two iteration variables ! (Cool Stuff)
