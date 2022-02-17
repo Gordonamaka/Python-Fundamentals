@@ -33,3 +33,27 @@ for aaa,bbb in jjj.items() :
 # Each iteration, the first variable is the key and the second variable is the corresponding value for the key.
 
 # Python is the only language I know with two iteration variables ! (Cool Stuff)
+
+
+# Intersecting Files and dictionaries
+name = input('Enter file: ')
+handle = open(name)
+
+counts = dict()
+# Iteration that goes through each line in the file
+for pline in handle :
+  # Splits them into an array
+  words = pline.split()
+  # Make a histogram for the count
+  for word in words:
+    counts[word] = counts.get(word,0) + 1
+
+bigcount = None
+bigword = None
+# Loop thru the key value pairs
+for word,count in counts.items() :
+  if bigcount is None or count > bigcount :
+    bigword = word
+    bigcount = count
+
+print(bigword, bigcount)
