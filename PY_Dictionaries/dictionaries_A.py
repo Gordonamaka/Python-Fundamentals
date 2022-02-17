@@ -15,3 +15,31 @@ purse['candy'] = purse['candy'] + 2
 print(purse)
 
 # Pythons dictionaries can not use dot notation like in Javascript, only bracket notation [].
+
+
+# Comparing Lists and Dictionaries
+# Dicts use keys instead of numbers to look up values
+
+# List
+lst = list()
+lst.append(21)
+lst.append(183)
+print(lst)
+[21, 183]
+lst[0] = 23
+print(lst)
+
+# Dict
+ddd = dict()
+ddd['age'] = 21
+ddd['course'] = 182
+print(ddd)
+ddd['age'] = 23
+print(ddd)
+
+# Dictionary Literals (Constants) - A list of key : value pairs.
+# You could make an empty dictionary using empty curly braces. 
+jjj = { 'chuck' : 1, 'fred' : 42, 'jan': 100 }
+print(jjj)
+ooo = {  }
+print(ooo)
