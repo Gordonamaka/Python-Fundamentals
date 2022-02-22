@@ -24,7 +24,7 @@ for line in hand: # For each line in the indicated file
 
 
 # Escape Character - If you want a special regular expression character to just behave normally (most of the time) you prefix it with '\'
-
 i = 'We just received $10.00 for cookies.'
-k = re.findall('\$[0-9.]+', i)
+k = re.findall('\$[0-9.]+', i) # Non-greedy regex would stop at $1, but we use greedy to get everything after that
+# \$ indicates a real dollar sign, 0-9. indicates a digit or period, and + indicates at least one or more (aka the greedy factor, +? would be non-greedy).
 print(k)
