@@ -9,7 +9,7 @@ mysock.connect( ('data.pr4e.org', 80) ) # HOST, PORT - This will blowup if the s
 
 
 # We're the web browser in this case.
-cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.1\n\n'.encode() # This sends the string across the network
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.1\n\n'.encode() # This sends the string across the network as we encode it into UTF-8
 mysock.send(cmd) # And this receives it back
 
 while True:
