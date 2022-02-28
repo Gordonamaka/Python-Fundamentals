@@ -1,5 +1,5 @@
 # A Sample Class - OOP Priniciples
-
+# dir() command lists capabilities of performable operations - Never forget this.
 
 # This is the template for making PartyAnimal objects
 class PartyAnimal:
