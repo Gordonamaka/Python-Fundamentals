@@ -31,9 +31,13 @@ Relationships that are based on matching string feilds are less efficient than i
 """
 
 # Relational Databases: Join Operation
+"""
+select Album.title, Artist.name FROM Album join Artist on Album.artist_id = Artist.id
 
-# select Album.title, Artist.name FROM Album join Artist on Album.artist_id = Artist.id
+What we want to see ||    The tables that hold the data || How the tables are linked
 
-#   What we want to see ||    The tables that hold the data || How the tables are linked
+Joining two tables without an ON Clause gives all possible combinations of rows.
+"""
 
-# Joining two tables without an ON Clause gives all possible combinations of rows.
+
+
